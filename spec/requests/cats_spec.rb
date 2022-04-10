@@ -60,6 +60,8 @@ RSpec.describe "Cats", type: :request do
     end
   end
 
+/---------------------------------------------------------------------------------------------------------------------/
+
   describe 'cannot create a cat without valid attributes'do
     it 'cannot create a cat without a name' do
       cat_params = {
@@ -77,6 +79,8 @@ RSpec.describe "Cats", type: :request do
       expect(json['name']).to include "can't be blank"
     end
     end
+
+/---------------------------------------------------------------------------------------------------------------------/
 
   describe 'cannot create a cat without valid attributes'do
     it 'cannot create a cat without an age' do
@@ -96,6 +100,8 @@ RSpec.describe "Cats", type: :request do
     end
   end
 
+/---------------------------------------------------------------------------------------------------------------------/
+
   describe 'cannot create a cat without valid attributes'do
     it 'cannot create a cat without an enjoys' do
       cat_params = {
@@ -113,6 +119,8 @@ RSpec.describe "Cats", type: :request do
       expect(cat['enjoys']).to include "can't be blank"
     end
     end
+
+/---------------------------------------------------------------------------------------------------------------------/
 
   describe 'cannot create a cat without valid attributes'do
     it 'cannot create a cat without an enjoys that is less than 10 characters' do
@@ -132,6 +140,8 @@ RSpec.describe "Cats", type: :request do
       expect(cat['enjoys']).to include "is too short (minimum is 10 characters)"
     end
     end
+
+/---------------------------------------------------------------------------------------------------------------------/
 
   describe 'cannot create a cat without valid attributes'do
     it 'cannot create a cat without an image' do
