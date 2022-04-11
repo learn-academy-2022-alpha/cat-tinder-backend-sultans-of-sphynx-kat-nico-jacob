@@ -13,16 +13,6 @@ class CatsController < ApplicationController
         end
     end
 
-    # def update
-    #     cat = Cat.find(params[:id])
-    #     cat.update(strong_cat_params)
-    #     if cat.valid?
-    #         render json:cat
-    #     else
-    #         render json:cat.errors, status:422
-    #     end
-    # end
-
     def destroy
         cat = Cat.find(params[:id])
         if cat.destroy

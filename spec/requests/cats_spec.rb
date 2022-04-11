@@ -160,37 +160,4 @@ RSpec.describe "Cats", type: :request do
       expect(cat['image']).to include "can't be blank"
     end
     end
-
-
-/---------------------------------------------------------------------------------------------------------------------/
-
-  # describe 'PATCH /update' do
-  #   it 'updates a cat' do
-  #     Cat.create(
-  #       name: 'Felix Da House Cat',
-  #       age: 420,
-  #       enjoys: 'Throwing down tunes',
-  #       image: 'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1036&q=80'
-  #     )
-  #
-  #     felix_da_house_cat = Cat.first
-  #
-  #     cat_params = {
-  #       cat: {
-  #         name: 'Geopetto',
-  #         age: 9001,
-  #         enjoys: 'Annoying Pinocchio',
-  #         image: 'https://helios-i.mashable.com/imagery/articles/009YzbEnPjDaHspw2iRWT5p/images-1.fit_lim.size_2000x.v1611696799.png'
-  #       }
-  #     }
-  #
-  #     patch "/cats/#{felix_da_house_cat.id}", params: cat_params
-  #     cat_mystery = Cat.find(felix_da_house_cat.id)
-  #
-  #     expect(response).to have_http_status(200)
-  #     expect(cat_mystery.name).to eq 'Geopetto'
-  #   end
-  # end
-
-/---------------------------------------------------------------------------------------------------------------------/
   end
